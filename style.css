@@ -1,0 +1,45 @@
+body {
+  background-color: #171d23;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  background-color: #222730;
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+
+.body {
+  margin: 8px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.container * {
+  background: var(--b, #222730);
+}
+
+.container img {
+  --b: radial-gradient(#393e46 25px, #4caab3 0);
+  padding: 75px 200px;
+  margin: 67px -8px;
+  position: absolute;
+}
+
+.container img + img {
+  padding: 75px;
+  margin: 17px 67px;
+  border: 50px solid#222730;
+  transform: rotate(45deg);
+}
